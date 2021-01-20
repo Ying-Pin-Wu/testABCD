@@ -69,6 +69,15 @@ DWORD WINAPI myThread(LPVOID lpParameter)
 
 int main()
 {
+	auto p = make_unique<int[]>(5);
+
+	for (int i = 0; i < 5; ++i)
+	{
+    	p[i] = i;
+    	cout << p[i] << endl;
+	}
+
+	/*Thread test*/
 	unsigned int myCounter = 0;
 	DWORD myThreadID;
 	HANDLE myHandle = CreateThread(0, 0, myThread, &myCounter, 0, &myThreadID);
