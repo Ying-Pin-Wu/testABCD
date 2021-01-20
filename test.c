@@ -2,7 +2,7 @@
 #include <windows.h>
 #include <vector>
 using namespace std;
-#define F1_debug 1.0
+#define F1_debug 1.1
 void test_vector(void)
 {
 	int array[] = {0,1,2,3,4,5};
